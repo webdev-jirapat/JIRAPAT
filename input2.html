@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เเบบสอบถาม</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background: url('1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        h1 { 
+            text-align: center; 
+        }
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>เเบบสอบถาม</h1>
+
+<form action="index.html" method="get">
+    <label>ระบุชื่อ-สกุล:</label>
+    <input type="text" name="Fullname" id="Fullname" required>
+    <br><br>
+
+    <label>ระบุเพศ:</label>
+    <input type="radio" name="gender" value="ชาย">ชาย
+    <input type="radio" name="gender" value="หญิง">หญิง
+    <input type="radio" name="gender" value="อื่นๆ">อื่นๆ
+    <br><br>
+
+    <label>ระบุอายุ:</label>
+    <input type="radio" name="age" value="ต่ำกว่า18"> ต่ำกว่า 18 
+    <input type="radio" name="age" value="19-35"> 19-35  
+    <input type="radio" name="age" value="36-49"> 36-49  
+    <input type="radio" name="age" value="41-60"> 41-60  
+    <input type="radio" name="age" value="มากกว่า60"> มากกว่า 60  
+    <br><br>
+
+    <label>งานอดิเรก:</label>
+    <input type="checkbox" name="hobby" value="นอน"> นอน
+    <input type="checkbox" name="hobby" value="เกม"> เกม
+    <input type="checkbox" name="hobby" value="ช็อป"> ช็อป
+    <input type="checkbox" name="hobby" value="กีฬา"> กีฬา
+    <input type="checkbox" name="hobby" value="อ่านหนังสือ"> อ่านหนังสือ
+    <input type="checkbox" name="hobby" value="ทีวี"> ทีวี
+    <input type="checkbox" name="hobby" value="อื่นๆ"> อื่นๆ  
+    <br><br>
+
+    <label>อื่นๆ:</label> 
+    <input type="text" name="hobby2" maxlength="25" size="10">
+    <br><br>
+
+    <label>แนบไฟล์รูปภาพ:</label>
+    <input type="file" name="pic" accept="image/*">
+    <br><br>
+
+    <label>สังกัดคณะ:</label>
+    <select name="faculty" id="faculty">
+        <option value="เทคโนโลยีสารสนเทศ">เทคโนโลยีสารสนเทศ</option>
+        <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>
+        <option value="พยาบาลศาสตร์">พยาบาลศาสตร์</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="ส่งข้อมูล">
+</form>
+
+</body>
+</html>
